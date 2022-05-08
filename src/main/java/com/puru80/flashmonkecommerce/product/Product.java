@@ -34,10 +34,6 @@ public class Product implements Serializable {
     @Column(name = "company", nullable = false)
     private String company;
 
-    @OneToMany(mappedBy = "product", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @ToString.Exclude
-    private List<Sku> sku = new ArrayList<>();
-
     public Product(String name, Double price, String company) {
         this.name = name;
         this.price = price;

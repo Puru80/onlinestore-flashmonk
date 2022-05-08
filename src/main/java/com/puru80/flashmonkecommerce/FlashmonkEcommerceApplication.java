@@ -1,7 +1,14 @@
 package com.puru80.flashmonkecommerce;
 
+import com.puru80.flashmonkecommerce.product.Product;
+import com.puru80.flashmonkecommerce.product.ProductRepository;
+import com.puru80.flashmonkecommerce.sku.Sku;
+import com.puru80.flashmonkecommerce.sku.SkuRequest;
+import com.puru80.flashmonkecommerce.sku.SkuService;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class FlashmonkEcommerceApplication {
@@ -10,25 +17,16 @@ public class FlashmonkEcommerceApplication {
         SpringApplication.run(FlashmonkEcommerceApplication.class, args);
     }
 
-    /*@Bean
-    CommandLineRunner runner(ProductRepository productRepository, ProductService productService, SkuService skuService){
+    @Bean
+    CommandLineRunner runner(SkuService skuService, ProductRepository productRepository){
         return args -> {
-            Product p = new Product(
-                    "Product3",
-                    480.00,
-                    "Company2"
-            );
 
-            productService.saveProduct(p);
+            System.out.println(skuService.addSku(new SkuRequest(1L, 190L)));
 
-            skuService.addUpdateSku(new Sku(p, 100L));
-            skuService.addUpdateSku(new Sku(p, 120L));
-            skuService.addUpdateSku(new Sku(p, 30L));
-
-            productRepository.findById(1L).ifPresentOrElse(s -> {
+            /*productRepository.findById(1L).ifPresentOrElse(s -> {
                 Product product = productRepository.findById(1L).get();
-                System.out.println(product.getName());
-            }, () -> System.out.println("Product Not Found"));
+                System.out.println(product.getSkuList().isEmpty());
+            }, () -> System.out.println("Product Not Found"));*/
         };
-    }*/
+    }
 }

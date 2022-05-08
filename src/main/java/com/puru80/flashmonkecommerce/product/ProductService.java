@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.Optional;
 
 @AllArgsConstructor
 @Service
@@ -16,16 +15,21 @@ public class ProductService {
         productRepository.save(product);
     }
 
+    public Product getProduct(Long id){
+        if(productRepository.findById(id).isPresent())
+            return productRepository.findById(id).get();
+
+        return null;
+    }
+
     @Transactional
-    public Optional<Product> updateProduct(Product product){
-        return productRepository.findById(product.getProductId()).map(target -> {
+    public void updateProduct(Product product){
+        productRepository.findById(product.getProductId()).map(target -> {
             target.setName(product.getName());
             target.setCompany(product.getCompany());
             target.setPrice(product.getPrice());
-
             return target;
         });
     }
-
 
 }
