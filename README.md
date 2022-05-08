@@ -2,4 +2,4 @@
 
 DB Schema: create.sql
 
-Sample request/responses: httpRsponses
+Sample request/responses: http-res-req
