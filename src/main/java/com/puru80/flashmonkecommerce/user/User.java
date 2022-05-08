@@ -1,25 +1,29 @@
 package com.puru80.flashmonkecommerce.user;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.Serializable;
 
+@Entity
+@Table(name = "user_table")
 @Getter
 @Setter
-@Entity
-public class User {
+@ToString
+@NoArgsConstructor
+public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
-    private Long id;
+    private Long userId;
 
+    @Column(name = "name")
     private String name;
 
-    /*@OneToMany(mappedBy = "product", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @ToString.Exclude
-    private List<Order> orders = new ArrayList<>();*/
+    public User(String name) {
+        this.name = name;
+    }
 }

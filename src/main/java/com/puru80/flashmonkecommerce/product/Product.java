@@ -1,14 +1,11 @@
 package com.puru80.flashmonkecommerce.product;
 
-import com.puru80.flashmonkecommerce.sku.Sku;
 import lombok.*;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -34,10 +31,14 @@ public class Product implements Serializable {
     @Column(name = "company", nullable = false)
     private String company;
 
-    public Product(String name, Double price, String company) {
+    @Column(name = "quantity", nullable = false)
+    private Long quantity;
+
+    public Product(String name, Double price, String company, Long quantity) {
         this.name = name;
         this.price = price;
         this.company = company;
+        this.quantity = quantity;
     }
 
     public Product(Long productId, String name, Double price, String company) {
