@@ -26,10 +26,6 @@ public class OrderProductPK implements Serializable {
     @JoinColumn(name = "product_id")
     private Product product;
 
-    // standard getters and setters
-
-    // hashcode() and equals() methods
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
