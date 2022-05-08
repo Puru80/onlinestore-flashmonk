@@ -8,6 +8,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class SkuRequest {
+    private Long skuId;
     private Long productId;
     private Long quantity;
 }

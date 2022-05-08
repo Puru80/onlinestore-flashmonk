@@ -11,18 +11,22 @@ public class FlashmonkEcommerceApplication {
     }
 
     /*@Bean
-    CommandLineRunner runner(SkuService skuService){
+    CommandLineRunner runner(ProductRepository repository){
         return args -> {
+            List<Product> pList = new ArrayList<>();
 
             for(int i=1;i<=20;i++) {
                 Random r = new Random();
 
-                SkuRequest req = new SkuRequest(r.nextLong(5) + 1, (long) (25 * i));
-
-                skuService.addSku(req);
+                pList.add(new Product(
+                        "Product" + (i+1),
+                        (double)(35 * i + r.nextInt(50)),
+                        "Company" + i,
+                        (long)(r.nextInt(50) * i)
+                ));
             }
 
-
+            repository.saveAll(pList);
 
         };
     }*/

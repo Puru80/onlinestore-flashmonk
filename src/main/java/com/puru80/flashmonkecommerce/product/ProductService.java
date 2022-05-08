@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @AllArgsConstructor
 @Service
@@ -30,6 +31,14 @@ public class ProductService {
             target.setPrice(product.getPrice());
             return target;
         });
+    }
+
+    public List<Product> getAvailableProducts(){
+        List<Product> productList = productRepository.getAvailableProduct();
+
+        if(productList.isEmpty())
+            throw new NullPointerException("No Products Available");
+        return productList;
     }
 
 }
