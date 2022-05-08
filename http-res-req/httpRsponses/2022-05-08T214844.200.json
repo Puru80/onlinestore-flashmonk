@@ -1,0 +1,310 @@
+[
+  {
+    "productId": 1,
+    "name": "Product1",
+    "price": 100.0,
+    "company": "Company1",
+    "quantity": 50
+  },
+  {
+    "productId": 2,
+    "name": "Product1",
+    "price": 200.0,
+    "company": "Company2",
+    "quantity": 100
+  },
+  {
+    "productId": 3,
+    "name": "Product1",
+    "price": 300.0,
+    "company": "Company3",
+    "quantity": 150
+  },
+  {
+    "productId": 4,
+    "name": "Product1",
+    "price": 400.0,
+    "company": "Company4",
+    "quantity": 200
+  },
+  {
+    "productId": 5,
+    "name": "Product1",
+    "price": 500.0,
+    "company": "Company5",
+    "quantity": 250
+  },
+  {
+    "productId": 6,
+    "name": "Product2",
+    "price": 50.0,
+    "company": "Company1",
+    "quantity": 14
+  },
+  {
+    "productId": 7,
+    "name": "Product3",
+    "price": 77.0,
+    "company": "Company2",
+    "quantity": 32
+  },
+  {
+    "productId": 8,
+    "name": "Product4",
+    "price": 121.0,
+    "company": "Company3",
+    "quantity": 144
+  },
+  {
+    "productId": 9,
+    "name": "Product5",
+    "price": 184.0,
+    "company": "Company4",
+    "quantity": 124
+  },
+  {
+    "productId": 10,
+    "name": "Product6",
+    "price": 176.0,
+    "company": "Company5",
+    "quantity": 175
+  },
+  {
+    "productId": 11,
+    "name": "Product7",
+    "price": 242.0,
+    "company": "Company6",
+    "quantity": 144
+  },
+  {
+    "productId": 13,
+    "name": "Product9",
+    "price": 329.0,
+    "company": "Company8",
+    "quantity": 192
+  },
+  {
+    "productId": 14,
+    "name": "Product10",
+    "price": 339.0,
+    "company": "Company9",
+    "quantity": 396
+  },
+  {
+    "productId": 15,
+    "name": "Product11",
+    "price": 390.0,
+    "company": "Company10",
+    "quantity": 30
+  },
+  {
+    "productId": 16,
+    "name": "Product12",
+    "price": 392.0,
+    "company": "Company11",
+    "quantity": 44
+  },
+  {
+    "productId": 17,
+    "name": "Product13",
+    "price": 451.0,
+    "company": "Company12",
+    "quantity": 276
+  },
+  {
+    "productId": 18,
+    "name": "Product14",
+    "price": 492.0,
+    "company": "Company13",
+    "quantity": 182
+  },
+  {
+    "productId": 19,
+    "name": "Product15",
+    "price": 533.0,
+    "company": "Company14",
+    "quantity": 56
+  },
+  {
+    "productId": 20,
+    "name": "Product16",
+    "price": 537.0,
+    "company": "Company15",
+    "quantity": 195
+  },
+  {
+    "productId": 21,
+    "name": "Product17",
+    "price": 578.0,
+    "company": "Company16",
+    "quantity": 688
+  },
+  {
+    "productId": 22,
+    "name": "Product18",
+    "price": 611.0,
+    "company": "Company17",
+    "quantity": 561
+  },
+  {
+    "productId": 23,
+    "name": "Product19",
+    "price": 669.0,
+    "company": "Company18",
+    "quantity": 720
+  },
+  {
+    "productId": 24,
+    "name": "Product20",
+    "price": 709.0,
+    "company": "Company19",
+    "quantity": 152
+  },
+  {
+    "productId": 25,
+    "name": "Product21",
+    "price": 734.0,
+    "company": "Company20",
+    "quantity": 760
+  },
+  {
+    "productId": 26,
+    "name": "Product2",
+    "price": 81.0,
+    "company": "Company1",
+    "quantity": 19
+  },
+  {
+    "productId": 27,
+    "name": "Product3",
+    "price": 88.0,
+    "company": "Company2",
+    "quantity": 8
+  },
+  {
+    "productId": 28,
+    "name": "Product4",
+    "price": 112.0,
+    "company": "Company3",
+    "quantity": 39
+  },
+  {
+    "productId": 29,
+    "name": "Product5",
+    "price": 157.0,
+    "company": "Company4",
+    "quantity": 84
+  },
+  {
+    "productId": 30,
+    "name": "Product6",
+    "price": 184.0,
+    "company": "Company5",
+    "quantity": 175
+  },
+  {
+    "productId": 31,
+    "name": "Product7",
+    "price": 234.0,
+    "company": "Company6",
+    "quantity": 270
+  },
+  {
+    "productId": 32,
+    "name": "Product8",
+    "price": 285.0,
+    "company": "Company7",
+    "quantity": 294
+  },
+  {
+    "productId": 33,
+    "name": "Product9",
+    "price": 328.0,
+    "company": "Company8",
+    "quantity": 112
+  },
+  {
+    "productId": 34,
+    "name": "Product10",
+    "price": 352.0,
+    "company": "Company9",
+    "quantity": 54
+  },
+  {
+    "productId": 35,
+    "name": "Product11",
+    "price": 390.0,
+    "company": "Company10",
+    "quantity": 290
+  },
+  {
+    "productId": 36,
+    "name": "Product12",
+    "price": 433.0,
+    "company": "Company11",
+    "quantity": 99
+  },
+  {
+    "productId": 37,
+    "name": "Product13",
+    "price": 427.0,
+    "company": "Company12",
+    "quantity": 528
+  },
+  {
+    "productId": 38,
+    "name": "Product14",
+    "price": 494.0,
+    "company": "Company13",
+    "quantity": 468
+  },
+  {
+    "productId": 39,
+    "name": "Product15",
+    "price": 526.0,
+    "company": "Company14",
+    "quantity": 154
+  },
+  {
+    "productId": 40,
+    "name": "Product16",
+    "price": 558.0,
+    "company": "Company15",
+    "quantity": 105
+  },
+  {
+    "productId": 41,
+    "name": "Product17",
+    "price": 596.0,
+    "company": "Company16",
+    "quantity": 720
+  },
+  {
+    "productId": 42,
+    "name": "Product18",
+    "price": 601.0,
+    "company": "Company17",
+    "quantity": 476
+  },
+  {
+    "productId": 43,
+    "name": "Product19",
+    "price": 673.0,
+    "company": "Company18",
+    "quantity": 108
+  },
+  {
+    "productId": 44,
+    "name": "Product20",
+    "price": 708.0,
+    "company": "Company19",
+    "quantity": 152
+  },
+  {
+    "productId": 45,
+    "name": "Product21",
+    "price": 719.0,
+    "company": "Company20",
+    "quantity": 620
+  }
+]
